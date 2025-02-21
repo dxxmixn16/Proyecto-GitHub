@@ -10,4 +10,16 @@ def simular_partido():
     historial.append(resultado)
     print(resultado)
 
+def ver_historial():
+    print("\n".join(historial) if historial else "No hay partidos en el historial.")
+
+def menu():
+    while True:
+        print("\nMenú:")
+        print("1. Simular partido")
+        print("2. Ver historial")
+        print("3. Salir")
+        opcion = input("Elige una opción: ")
+
+
 
