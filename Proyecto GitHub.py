@@ -20,6 +20,15 @@ def menu():
         print("2. Ver historial")
         print("3. Salir")
         opcion = input("Elige una opción: ")
+        
+        if opcion == "1":
+            simular_partido()
+        elif opcion == "2":
+            ver_historial()
+        elif opcion == "3":
+            print("Saliendo...")
+            break
+        else:
+            print("Opción no válida, intenta de nuevo.")
 
-
-
+menu()
